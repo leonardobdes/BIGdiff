@@ -18,8 +18,11 @@ In the F5 device, create a folder in /shared/tmp, as /shared is shared between a
 Upload the file bigdiff.sh to the F5 device.
 
 Change the file permission to run:
+
 chmod +x bigdiff.sh
+
 Run the script:
+
 ./bigdiff.sh
 
 Run the script before the upgrade.
@@ -31,9 +34,13 @@ Open the HTML file with your favourite browser.
 Make sure you have the tablefilter.js in the same folder as the HTML file, if you want the filter functionalities.
 
 If you want to integrate the script with other tools, use the silent mode.
+
 Run the following command, to get more information:
+
 ./bigdiff.sh -h
+
 This will provide you the error code, where 0 means no error:
+
 echo $?
 
 Known Issues:
