@@ -4,8 +4,9 @@
 # Version: 1.0.0
 # Date: 12/08/2018
 
-# Version History - 1.0.0
-# First Version
+# Version History
+# 1.0.0 - First Version
+# 1.1.0 - #1 Wrong error code when there is no SNMP community
 
 ## Error Codes ##
 # Script exit error codes
@@ -216,7 +217,7 @@ get_options()
 get_snmp_community()
 {
   snmp_community=`tmsh list sys snmp communities | fgrep "community-name" | head -n1`
-  [[ $? != 0 ]] && error "There is no SNMP community setup" $e_no_snmp_community
+  [[ $snmp_community == "" ]] && error "There is no SNMP community setup" $e_no_snmp_community
   snmp_community=${snmp_community/"            community-name"}
 }
 # Run snmpwalk command to get the objects
