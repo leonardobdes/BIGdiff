@@ -11,6 +11,14 @@ As new versions are released, I will be testing to see if any change is needed t
 
 How to use this snippet:
 
+Before you use the script make sure you have the following SNMP configuration in the F5 device:
+
+At least one SNMP community version 2c, and localhost IP 127.0.0.1 is allowed to query.
+
+This is the default configuration anyway, with public community and 127.0.0.0/8 in the allow list.
+
+If you want to check, go to System > SNMP > Agent > Access (v1, v2c) for the community, and System > SNMP > Agent > Configuration for the allow list.
+
 Download the tablefilter.js file above, if you want to use the table filter functionality.
 Download the bigdiff.sh that is the script file.
 
