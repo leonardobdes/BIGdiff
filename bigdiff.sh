@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Author: Leonardo Souza
-# Version: 1.0.0
-# Date: 12/08/2018
+# Version: 1.1.0
+# Date: 02/09/2018
 
 # Version History
 # 1.0.0 - First Version
