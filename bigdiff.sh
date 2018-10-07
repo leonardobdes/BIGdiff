@@ -1,12 +1,15 @@
 #!/bin/bash
 
 # Author: Leonardo Souza
-# Version: 1.1.0
-# Date: 02/09/2018
+# Version: 1.2.0
+# Date: 08/10/2018
 
 # Version History
 # 1.0.0 - First Version
 # 1.1.0 - #1 Wrong error code when there is no SNMP community
+# 1.2.0 - Added debug mode options
+  #2 LTM Total table not showing lines that have changed
+  #3 GTM objects in the HTML file when the device does not have GTM provision
 
 ## Error Codes ##
 # Script exit error codes
@@ -17,6 +20,7 @@ e_software_verison_not_supported=3
 e_no_snmp_community=4
 e_running_snmpwalk=5
 e_no_before_upgrade_file=6
+e_no_after_upgrade_file=7
 
 ## Variables ##
 # No need to declare variables in Bash, but this is just to keep track
@@ -138,12 +142,20 @@ check_provision()
   # Most modules use LTM internally, so the script will show LTM even if it is not provisioned
 
   # GTM Module
-  tmsh list sys provision gtm level 2> /dev/null | grep "level none" &> /dev/null
-  [[ $? != 0 ]] && provision_gtm=1
+  tmsh list sys provision gtm level &> /dev/null
+  if [[ $? == 0 ]]
+  then
+    tmsh list sys provision gtm level 2> /dev/null | grep "level none" &> /dev/null
+    [[ $? != 0 ]] && provision_gtm=1
+  fi
 
   # Link Controller uses GTM Objects
-  tmsh list sys provision lc level 2> /dev/null | grep "level none" &> /dev/null
-  [[ $? != 0 ]] && provision_gtm=1
+  tmsh list sys provision lc level &> /dev/null
+  if [[ $? == 0 ]]
+  then
+    tmsh list sys provision lc level 2> /dev/null | grep "level none" &> /dev/null
+    [[ $? != 0 ]] && provision_gtm=1
+  fi
 }
 
 ## Options ##
@@ -162,6 +174,7 @@ usage()
   echo "h - Print information about how to use the script."
   echo "e - Print information about error codes."
   echo "i - Script information."
+  echo "d - Debug mode."
   exit 0
 }
 # Output error code variables in the script code
@@ -194,10 +207,18 @@ option_a()
   get_before_file
   generate_results
 }
+# Option - Debug mode
+option_d()
+{
+  silent=1
+  get_before_file
+  get_after_file
+  generate_results
+}
 # Read the script arguments
 get_options()
 {
-  while getopts ":bahei" option
+  while getopts ":baheid" option
   do
     case "$option" in
       b) option_b;;
@@ -205,6 +226,7 @@ get_options()
       h) usage;;
       e) error_codes;;
       i) script_information;;
+      d) option_d;;
       *) cli_error "Invalid script option" $e_invalid_script_option;;
     esac
   done
@@ -280,8 +302,16 @@ get_before_file()
     before_file=""
     before_file=`ls | fgrep -- "-before-"`
     [[ $before_file == "" ]] && error "Could not find before upgrade file" $e_no_before_upgrade_file
-  else
-    :
+  fi
+}
+# Get after upgrade file
+get_after_file()
+{
+  if [[ $silent == 1 ]]
+  then
+    after_file=""
+    after_file=`ls | fgrep -- "-after-"`
+    [[ $after_file == "" ]] && error "Could not find after upgrade file" $e_no_after_upgrade_file
   fi
 }
 # Load before and after upgrade files to arrays
@@ -391,7 +421,7 @@ generate_total_table_row()
     html_table_total_row "white" "$1" ${#before_object_name[@]} ${#after_object_name[@]} >> $html_file
   else
     let changes=changes+1
-    http_table_total_row "red" "$1" ${#before_object_name[@]} ${#after_object_name[@]} >> $html_file
+    html_table_total_row "red" "$1" ${#before_object_name[@]} ${#after_object_name[@]} >> $html_file
   fi
 }
 # Merge files, total table first and object tables after
