@@ -10,7 +10,7 @@
 # 1.2.0 - Added debug mode options
   #2 LTM Total table not showing lines that have changed
   #3 GTM objects in the HTML file when the device does not have GTM provision
-# 1.2.0 - #4 Object showing as changed, when disable and status are the same
+# 1.2.1 - #4 Object showing as changed, when disable and status are the same
 
 ## Error Codes ##
 # Script exit error codes
