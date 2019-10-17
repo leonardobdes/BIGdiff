@@ -2,7 +2,7 @@
 
 # Author: Leonardo Souza
 # Version: 1.2.1
-# Date: 08/10/2018
+# Date: 17/10/2019
 
 # Version History
 # 1.0.0 - First Version
