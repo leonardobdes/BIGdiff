@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Leonardo Souza
-# Version: 1.2.0
+# Version: 1.2.1
 # Date: 08/10/2018
 
 # Version History
@@ -10,6 +10,7 @@
 # 1.2.0 - Added debug mode options
   #2 LTM Total table not showing lines that have changed
   #3 GTM objects in the HTML file when the device does not have GTM provision
+# 1.2.0 - #4 Object showing as changed, when disable and status are the same
 
 ## Error Codes ##
 # Script exit error codes
@@ -402,7 +403,7 @@ generate_object_table()
           then
             let changes=changes+1
             html_table_object_row "red" ${before_object_name[$index]} ${before_object_enabled[$index]} ${after_object_enabled[$index2]} \
-            ${before_object_status[$index]} ${after_object_status[$index]} "Changed" >> $html_tables_file
+            ${before_object_status[$index]} ${after_object_status[$index2]} "Changed" >> $html_tables_file
           else
             html_table_object_row "white" ${before_object_name[$index]} ${before_object_enabled[$index]} ${after_object_enabled[$index2]} \
             ${before_object_status[$index]} ${after_object_status[$index2]} "Same" >> $html_tables_file
