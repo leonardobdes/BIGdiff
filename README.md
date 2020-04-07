@@ -184,8 +184,9 @@ Example with changes:
 ## BIGdiff Remote
 
 
-This is an extra script that allows you to run BIGdiff remotely, using SSH to connect to the devices and SCP to transfer files.
+This is an extra script that allows you to run BIGdiff remotely, using SSH to connect to the devices and SCP to transfer files.\
 The script automates all required tasks, including transferring bigdiff.sh file to the remote devices, copying all files created by BIGdiff, and removing files after.
+
 
 **Important Note: BIGdiff Remote uses sshpass (https://linux.die.net/man/1/sshpass) internally, make sure sshpass is installed to use the script.**
 
@@ -203,16 +204,18 @@ Usage:
 
 
 Options:
-* --option – This will be the option that will be used when running BIGdiff.
-Valid options to run BIGdiff remotely are:
+* --option – This will be the option that will be used when running BIGdiff.\
+Valid options to run BIGdiff remotely are:\
 --before --after --before-without --after-without --backup --ucs --qkview --logs
 * file – This is the file with the list of devices, one per line, you can use IP or name.
 
 
 Example:
+
 ![](/images/bigdiff_remote.png)
 
 ## VIPRION
+
 
 I don’t have a VIPRION system for tests at the moment, but I will make some improvements when I have access to one.
 
@@ -236,27 +239,29 @@ The following bugs exist on the BIG-IP versions this script supports.
 For some of them, I could create a workaround, for others was not possible.
 
 
-[K14618: The SNMP table index may be generated incorrectly](https://support.f5.com/csp/article/K14618)
-If you have LTM pools with large names, and are using the following versions:
-11.0.0 11.1.0 11.2.0 11.2.1 11.3.0
-The system will not return the correct name for the pool member in that pool when queried using SNMP.
+[K14618: The SNMP table index may be generated incorrectly](https://support.f5.com/csp/article/K14618)\
+If you have LTM pools with large names, and are using the following versions:\
+11.0.0 11.1.0 11.2.0 11.2.1 11.3.0\
+The system will not return the correct name for the pool member in that pool when queried using SNMP.\
 The script will warn you about that and will just skip those pool members.
 
-**GTM Links (no bug id or solution)**
-No GTM link listed in 11.0.0.
-F5 device does not return the list of GTM links in version 11.0.0.
-The problem does not exist on the following tested version:
-11.3.0, 12.0.0, 13.1.0.1, 14.0.0, 15.1.0
+**GTM Links (no bug id or solution)**\
+No GTM link listed in 11.0.0.\
+F5 device does not return the list of GTM links in version 11.0.0.\
+The problem does not exist on the following tested version:\
+11.3.0, 12.0.0, 13.1.0.1, 14.0.0, 15.1.0\
 It probably applies to versions between 11.0.0 and 11.2.0.
 
 
-[Bug ID 740543: System hostname not display in console](https://cdn.f5.com/product/bugtracker/ID740543.html)
+[Bug ID 740543: System hostname not display in console](https://cdn.f5.com/product/bugtracker/ID740543.html)\
 The files created by the script may have the name localhost.localdomain instead of the correct device name.
 
 
 To report new bugs, or request for enhancement (RFE), please use the issues section on GitHub.
 
+
 ## Author
 
-Name: Leonardo Souza
+
+Name: Leonardo Souza\
 LinkedIn: https://uk.linkedin.com/in/leonardobdes
