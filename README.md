@@ -235,7 +235,7 @@ A vCMP guest with 2 or more blades behaviours the same way as a virtual multi-bl
 
 ## Bugs
 
-The following bugs exist on the BIG-IP versions this script supports.
+The following bugs exist on the BIG-IP versions this script supports.\
 For some of them, I could create a workaround, for others was not possible.
 
 
