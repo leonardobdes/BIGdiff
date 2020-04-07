@@ -221,7 +221,7 @@ Example:
 ## VIPRION
 
 
-I don’t have a VIPRION system for tests at the moment, but I will make some improvements when I have access to one.
+I don’t have a VIPRION device for tests at the moment, but I will make some improvements when I have access to one.
 
 
 A QKView should be generated in the primary blade to include inside a QKView per blade, so I would like the script to test that and alert if that is not the case.
