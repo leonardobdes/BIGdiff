@@ -172,12 +172,12 @@ Example with changes:
 For a full HTML example file, download the following files:
 
 
-Example with 0 changes:
+Example without changes:
 
-![](/)
+![](/html/LABBIGIP1.lab.local-html-20200403094559.html)
 
-Example with x changes:
-![](/)
+Example with changes:
+![](/html/LABBIGIP1.lab.local-html-20200403144617.html)
 
 
 ## BIGdiff Remote
