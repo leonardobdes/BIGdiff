@@ -250,7 +250,6 @@ The system will not return the correct name for pool members in that pool when q
 The script will warn you about that and will skip those pool members.
 
 **GTM Links (no bug id or solution)**\
-No GTM link listed in 11.0.0.\
 F5 device does not return the list of GTM links in version 11.0.0.\
 The problem does not exist on the following tested version:\
 11.3.0, 12.0.0, 13.1.0.1, 14.0.0, 15.1.0\
