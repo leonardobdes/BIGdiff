@@ -1,0 +1,685 @@
+<html>
+<head>
+<title>BIGdiff</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+<style type="text/css" class="init">
+</style>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" class="init">
+$(document).ready(function() {
+$('#total_ltm').DataTable();
+$('#total_gtm').DataTable();
+$('#ltm_virtual_server').DataTable();
+$('#ltm_pool').DataTable();
+$('#ltm_pool_member').DataTable();
+$('#ltm_node').DataTable();
+$('#gtm_data_center').DataTable();
+$('#gtm_server').DataTable();
+$('#gtm_wideip').DataTable();
+$('#gtm_pool').DataTable();
+$('#gtm_pool_member').DataTable();
+$('#gtm_virtual_server').DataTable();
+$('#gtm_prober_pool').DataTable();
+$('#gtm_prober_pool_member').DataTable();
+$('#gtm_link').DataTable();
+$('#gtm_distributed_applications').DataTable();
+} );
+</script>
+</head>
+<body>
+<center>
+<p><font size=10>BIGdiff</font></p>
+<p><font size=5>Fri Apr  3 09:47:30 BST 2020</font></p>
+<br>
+<p><font size=5>Status</font></p>
+<p><font size=4>No changes</font></p>
+<p><font size=5>Number of Changes</font></p>
+<p><font size=4>0</font></p>
+<br>
+<p><font size=5>LTM Total</font></p>
+<table id=total_ltm class=compact border=1>
+<thead>
+<tr>
+<th>Object</th>
+<th>Before Change</th>
+<th>After Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>Virtual Server</td>
+<td bgcolor=white>11</td>
+<td bgcolor=white>11</td>
+</tr>
+<tr>
+<td bgcolor=white>Pool</td>
+<td bgcolor=white>4</td>
+<td bgcolor=white>4</td>
+</tr>
+<tr>
+<td bgcolor=white>Pool Member</td>
+<td bgcolor=white>8</td>
+<td bgcolor=white>8</td>
+</tr>
+<tr>
+<td bgcolor=white>Node</td>
+<td bgcolor=white>5</td>
+<td bgcolor=white>5</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM Total</font></p>
+<table id=total_gtm class=compact border=1>
+<thead>
+<tr>
+<th>Object</th>
+<th>Before Change</th>
+<th>After Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>Data Center</td>
+<td bgcolor=white>2</td>
+<td bgcolor=white>2</td>
+</tr>
+<tr>
+<td bgcolor=white>Server</td>
+<td bgcolor=white>2</td>
+<td bgcolor=white>2</td>
+</tr>
+<tr>
+<td bgcolor=white>Wide IP</td>
+<td bgcolor=white>1</td>
+<td bgcolor=white>1</td>
+</tr>
+<tr>
+<td bgcolor=white>Pool</td>
+<td bgcolor=white>1</td>
+<td bgcolor=white>1</td>
+</tr>
+<tr>
+<td bgcolor=white>Pool Member</td>
+<td bgcolor=white>1</td>
+<td bgcolor=white>1</td>
+</tr>
+<tr>
+<td bgcolor=white>Virtual Server</td>
+<td bgcolor=white>1</td>
+<td bgcolor=white>1</td>
+</tr>
+<tr>
+<td bgcolor=white>Prober Pool</td>
+<td bgcolor=white>1</td>
+<td bgcolor=white>1</td>
+</tr>
+<tr>
+<td bgcolor=white>Prober Pool Member</td>
+<td bgcolor=white>2</td>
+<td bgcolor=white>2</td>
+</tr>
+<tr>
+<td bgcolor=white>Link</td>
+<td bgcolor=white>0</td>
+<td bgcolor=white>0</td>
+</tr>
+<tr>
+<td bgcolor=white>Distributed Applications</td>
+<td bgcolor=white>0</td>
+<td bgcolor=white>0</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>LTM - Virtual Server</font></p>
+<table id=ltm_virtual_server class=compact border=1>
+<thead>
+<tr>
+<th>Virtual Server</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/vs_asm</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_www</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_full</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_http</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_https</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_portal</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_webapp</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_network</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_internet</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_10_0_0_1_53_gtm</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/vs_10_0_0_1_53_gtm_0</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>LTM - Pool</font></p>
+<table id=ltm_pool class=compact border=1>
+<thead>
+<tr>
+<th>Pool</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/pool_asm</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_dns</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_http</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_https</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>LTM - Pool Member</font></p>
+<table id=ltm_pool_member class=compact border=1>
+<thead>
+<tr>
+<th>Pool</th>
+<th>Node</th>
+<th>Port</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/pool_asm</td>
+<td bgcolor=white>/Common/LABServerPHP</td>
+<td bgcolor=white>80</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_dns</td>
+<td bgcolor=white>/Common/LABServerDNS</td>
+<td bgcolor=white>53</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_http</td>
+<td bgcolor=white>/Common/LABServer1</td>
+<td bgcolor=white>80</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_http</td>
+<td bgcolor=white>/Common/LABServer2</td>
+<td bgcolor=white>80</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_http</td>
+<td bgcolor=white>/Common/LABServer3</td>
+<td bgcolor=white>80</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_https</td>
+<td bgcolor=white>/Common/LABServer1</td>
+<td bgcolor=white>443</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_https</td>
+<td bgcolor=white>/Common/LABServer2</td>
+<td bgcolor=white>443</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/pool_https</td>
+<td bgcolor=white>/Common/LABServer3</td>
+<td bgcolor=white>443</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>LTM - Node</font></p>
+<table id=ltm_node class=compact border=1>
+<thead>
+<tr>
+<th>Node</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/LABServer1</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABServer2</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABServer3</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABServerDNS</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABServerPHP</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Data Center</font></p>
+<table id=gtm_data_center class=compact border=1>
+<thead>
+<tr>
+<th>Data Center</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/LABBIGIP1</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABBIGIP2</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>blue</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Server</font></p>
+<table id=gtm_server class=compact border=1>
+<thead>
+<tr>
+<th>Server</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/LABBIGIP1.lab.local</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/LABBIGIP2.lab.local</td>
+<td bgcolor=white>disabled</td>
+<td bgcolor=white>disabled</td>
+<td bgcolor=white>red</td>
+<td bgcolor=white>red</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Wide IP</font></p>
+<table id=gtm_wideip class=compact border=1>
+<thead>
+<tr>
+<th>Wide IP</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/www.lab.local</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Pool</font></p>
+<table id=gtm_pool class=compact border=1>
+<thead>
+<tr>
+<th>Pool</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/pool_www</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Pool Member</font></p>
+<table id=gtm_pool_member class=compact border=1>
+<thead>
+<tr>
+<th>Pool</th>
+<th>Server</th>
+<th>Virtual Server</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/pool_www</td>
+<td bgcolor=white>/Common/LABBIGIP1.lab.local</td>
+<td bgcolor=white>www_lab_local</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Virtual Server</font></p>
+<table id=gtm_virtual_server class=compact border=1>
+<thead>
+<tr>
+<th>Server</th>
+<th>Virtual Server</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/LABBIGIP1.lab.local</td>
+<td bgcolor=white>www_lab_local</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Prober Pool</font></p>
+<table id=gtm_prober_pool class=compact border=1>
+<thead>
+<tr>
+<th>Prober Pool</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/proberpooltest1</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Prober Pool Member</font></p>
+<table id=gtm_prober_pool_member class=compact border=1>
+<thead>
+<tr>
+<th>Prober Pool</th>
+<th>Server</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor=white>/Common/proberpooltest1</td>
+<td bgcolor=white>/Common/LABBIGIP1.lab.local</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>enabled</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>green</td>
+<td bgcolor=white>Same</td>
+</tr>
+<tr>
+<td bgcolor=white>/Common/proberpooltest1</td>
+<td bgcolor=white>/Common/LABBIGIP2.lab.local</td>
+<td bgcolor=white>disabledbyparent</td>
+<td bgcolor=white>disabledbyparent</td>
+<td bgcolor=white>red</td>
+<td bgcolor=white>red</td>
+<td bgcolor=white>Same</td>
+</tr>
+</tbody>
+</table>
+<p><font size=5>GTM - Link</font></p>
+<table id=gtm_link class=compact border=1>
+<thead>
+<tr>
+<th>Link</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><font size=5>GTM - Distributed Applications</font></p>
+<table id=gtm_distributed_applications class=compact border=1>
+<thead>
+<tr>
+<th>Distributed Applications</th>
+<th>Before Change - Enabled</th>
+<th>After Change - Enabled</th>
+<th>Before Change - Status</th>
+<th>After Change - Status</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</center>
+</body>
+</html>
