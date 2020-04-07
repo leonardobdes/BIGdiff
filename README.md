@@ -206,10 +206,12 @@ Usage:
 
 
 Options:
-* --option – This will be the option that will be used when running BIGdiff.\
+* --option\
+This will be the option that will be used when running BIGdiff.\
 Valid options to run BIGdiff remotely are:\
 --before --after --before-without --after-without --backup --ucs --qkview --logs
-* file – This is the file with the list of devices, one per line, you can use IP or name.
+* file\
+This is the file with the list of devices, one per line, you can use IP or name.
 
 
 Example:
