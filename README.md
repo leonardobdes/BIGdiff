@@ -132,15 +132,15 @@ When opening the HTML file, the browser will download the required files from Da
 If the downloads fail, you don’t have Internet access as an example, the browser will show static HTML tables instead.
 
 
-The first part of the file will indicate if any change on the status of the objects, or the number of objects, occurred.
+The first part of the file will indicate if any change on the status of the objects, or the number of objects, occurred.\
 Also, the number of changes found.
 
 
-Example with 0 changes:
+Example without changes:
 
 ![](/images/html_file_1.png)
 
-Example with x changes:
+Example with changes:
 
 ![](/images/html_file_2.png)
 
@@ -148,11 +148,11 @@ Example with x changes:
 Next, the file will present a table that shows how many objects the script counted before and after the change, grouping them by object type.
 
 
-Example with 0 changes:
+Example without changes:
 
 ![](/images/html_file_3.png)
 
-Example with x changes:
+Example with changes:
 
 ![](/images/html_file_4.png)
 
@@ -160,11 +160,11 @@ Example with x changes:
 Lastly, the file will present a table per object type, indicating their status and if they were enabled or disabled before and after the change.
 
 
-Example with 0 changes:
+Example without changes:
 
 ![](/images/html_file_5.png)
 
-Example with x changes:
+Example with changes:
 
 ![](/images/html_file_6.png)
 
