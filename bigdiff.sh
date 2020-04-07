@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Author: Leonardo Souza
-# Version: 2.0.0
-# Date: 06/04/2020
+# Version: 2.0.1
+# Date: 07/04/2020
 
 # Version History
 # 1.0.0 - First Version
@@ -13,8 +13,9 @@
 # 1.2.1 - #4 Object showing as changed, when disable and status are the same
 # 2.0.0
   # Added bash associative array
-  # Added GTM Distributed Applications
+  # Added GTM Distributed Application
   # Added support for objects that has space in the name
+# 2.0.1 - Changed Distributed Applications to Distributed Application to match singular used in other objects
 
 ## Error Codes ##
 # Script exit error codes
@@ -776,11 +777,11 @@ generate_results()
     generate_object_table "GTM - Link" "gtm_link" "Link"
     generate_total_table_row "Link"
 
-    # GTM Module Distributed Applications
-    [[ $silent == 0 ]] && infobox "Calculating" "GTM Distributed Applications..." 0 0
+    # GTM Module Distributed Application
+    [[ $silent == 0 ]] && infobox "Calculating" "GTM Distributed Application..." 0 0
     load_files "gtmAppStatusEnabledState" "gtmAppStatusAvailState" $before_file $after_file
-    generate_object_table "GTM - Distributed Applications" "gtm_distributed_applications" "Distributed Applications"
-    generate_total_table_row "Distributed Applications"
+    generate_object_table "GTM - Distributed Application" "gtm_distributed_application" "Distributed Application"
+    generate_total_table_row "Distributed Application"
 
     html_table_total_tail "GTM" >> $html_file
   fi
@@ -829,7 +830,7 @@ $('#gtm_virtual_server').DataTable();
 $('#gtm_prober_pool').DataTable();
 $('#gtm_prober_pool_member').DataTable();
 $('#gtm_link').DataTable();
-$('#gtm_distributed_applications').DataTable();
+$('#gtm_distributed_application').DataTable();
 } );
 </script>
 HereDocument
