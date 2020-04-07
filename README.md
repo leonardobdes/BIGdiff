@@ -21,7 +21,7 @@ You can run the script before those changes, perform the changes, and run the sc
 The HTML file will give you the results, and it will indicate if something changed after you performed the change.
 
 
-Important Note: If you have a high availability (HA) pair or a device group with more than 2 devices, each device performs monitoring independently. This means you need to run the script on each device.
+**Important Note: If you have a high availability (HA) pair or a device group with more than 2 devices, each device performs monitoring independently. This means you need to run the script on each device.**
 
 
 ## Usage
