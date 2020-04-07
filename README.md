@@ -1,24 +1,24 @@
 #  BIGdiff
 ## About
 This is a bash script to help when doing changes to F5 devices.\
-The script will collect the status of the objects before and after the change, compare them and produce an HTML file with the results.
-Examples of objects are LTM virtual servers and GTM wide IPs.
-The script will also create the files you will need in case things go wrong (UCS/QKView/Logs).
+The script will collect the status of the objects before and after the change, compare them and produce an HTML file with the results.\
+Examples of objects are LTM virtual servers and GTM wide IPs.\
+The script will also create the files you will need in case things go wrong (UCS/QKView/Logs).\
 
 
-The most common scenario to use the script will be an upgrade.
-You run the script before the upgrade, upgrade the device, and run the script again.
-The HTML file will give you the results, and it will indicate if something when down after the upgrade.
+The most common scenario to use the script will be an upgrade.\
+You run the script before the upgrade, upgrade the device, and run the script again.\
+The HTML file will give you the results, and it will indicate if something when down after the upgrade.\
 
 
-You can also use the script when copying the configuration from one device to another (configuration migration).
-Also, consolidation, when copying the configuration from multiple devices to a single device.
+You can also use the script when copying the configuration from one device to another (configuration migration).\
+Also, consolidation, when copying the configuration from multiple devices to a single device.\
 
 
-Lastly, you can use the script in any scenario where you think that could be an impact on the F5 device.
-Let’s assume you are doing major routing changes to your network, and there is a possibility things go down on the F5 devices.
-You can run the script before those changes, perform the changes, and run the script again.
-The HTML file will give you the results, and it will indicate if something changed after you performed the change.
+Lastly, you can use the script in any scenario where you think that could be an impact on the F5 device.\
+Let’s assume you are doing major routing changes to your network, and there is a possibility things go down on the F5 devices.\
+You can run the script before those changes, perform the changes, and run the script again.\
+The HTML file will give you the results, and it will indicate if something changed after you performed the change.\
 
 
 Important Note: If you have a high availability (HA) pair or a device group with more than 2 devices, each device performs monitoring independently. This means you need to run the script on each device.
