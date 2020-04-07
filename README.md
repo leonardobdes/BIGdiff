@@ -171,7 +171,7 @@ Example with changes:
 ![](/images/html_file_6.png)
 
 
-For a full HTML example file, download the following files:
+For a full HTML example file, download the following files.
 
 
 Example without changes:
