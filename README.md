@@ -137,33 +137,48 @@ Also, the number of changes found.
 
 
 Example with 0 changes:
+
 ![](/images/html_file_1.png)
+
 Example with x changes:
+
 ![](/images/html_file_2.png)
+
 
 Next, the file will present a table that shows how many objects the script counted before and after the change, grouping them by object type.
 
 
 Example with 0 changes:
+
 ![](/images/html_file_3.png)
+
 Example with x changes:
+
 ![](/images/html_file_4.png)
+
 
 Lastly, the file will present a table per object type, indicating their status and if they were enabled or disabled before and after the change.
 
 
 Example with 0 changes:
+
 ![](/images/html_file_5.png)
+
 Example with x changes:
+
 ![](/images/html_file_6.png)
+
 
 For a full HTML example file, download the following files:
 
 
 Example with 0 changes:
+
 ![](/)
+
 Example with x changes:
 ![](/)
+
 
 ## BIGdiff Remote
 
