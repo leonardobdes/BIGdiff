@@ -1,6 +1,6 @@
 #  BIGdiff
 ## About
-This is a bash script to help when doing changes to F5 devices.
+This is a bash script to help when doing changes to F5 devices.\
 The script will collect the status of the objects before and after the change, compare them and produce an HTML file with the results.
 Examples of objects are LTM virtual servers and GTM wide IPs.
 The script will also create the files you will need in case things go wrong (UCS/QKView/Logs).
