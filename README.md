@@ -178,7 +178,7 @@ Example without changes:
 
 Example with changes:
 
-[LABBIGIP1.lab.local-html-20200403144617.html](/html/LABBIGIP1.lab.local-html-20200403144617.html)
+[LABBIGIP1.lab.local-html-20200403144617.html](https://raw.githubusercontent.com/leonardobdes/BIGdiff/master/html/LABBIGIP1.lab.local-html-20200403144617.html)
 
 
 ## BIGdiff Remote
