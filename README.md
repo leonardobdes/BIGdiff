@@ -246,8 +246,8 @@ For some of them, I could create a workaround, for others was not possible.
 [K14618: The SNMP table index may be generated incorrectly](https://support.f5.com/csp/article/K14618)\
 If you have LTM pools with large names, and are using the following versions:\
 11.0.0 11.1.0 11.2.0 11.2.1 11.3.0\
-The system will not return the correct name for the pool member in that pool when queried using SNMP.\
-The script will warn you about that and will just skip those pool members.
+The system will not return the correct name for the pool members in that pool when queried using SNMP.\
+The script will warn you about that and will skip those pool members.
 
 **GTM Links (no bug id or solution)**\
 No GTM link listed in 11.0.0.\
