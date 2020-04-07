@@ -104,6 +104,7 @@ Example, help option:
 ```
 
 If you run the above command, you will be presented with the following text:
+
 ![](/images/silent_mode.png)
 
 
