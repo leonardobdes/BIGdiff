@@ -29,6 +29,8 @@ Important Note: If you have a high availability (HA) pair or a device group with
 
 1. Download the file bigdiff.sh
 2. Create a folder on the device
+
+
 **Important Note: Create inside of the folder /shared/tmp/ as the /shared/ is shared between volumes.**
     ```
     mkdir /shared/tmp/bigdiff/
