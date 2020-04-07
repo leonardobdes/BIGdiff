@@ -114,7 +114,7 @@ I will explain only the ones that are specific to silent mode.
 
 Options:
 * debug\
-This option allows running the script against files created on other devices for troubleshooting.
+This option allows running the script against files created on other devices for troubleshooting.\
 The script will load the files from the local folder, files with name “-before-” and “-after-”, and generate an HTML file with the results.
 * Error\
 This option will list the error codes and their respective number.
