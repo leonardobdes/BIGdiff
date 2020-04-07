@@ -174,10 +174,11 @@ For a full HTML example file, download the following files:
 
 Example without changes:
 
-![LABBIGIP1.lab.local-html-20200403094559.html](/html/LABBIGIP1.lab.local-html-20200403094559.html)
+[LABBIGIP1.lab.local-html-20200403094559.html](/html/LABBIGIP1.lab.local-html-20200403094559.html)
 
 Example with changes:
-![LABBIGIP1.lab.local-html-20200403144617.html](/html/LABBIGIP1.lab.local-html-20200403144617.html)
+
+[LABBIGIP1.lab.local-html-20200403144617.html](/html/LABBIGIP1.lab.local-html-20200403144617.html)
 
 
 ## BIGdiff Remote
