@@ -8,7 +8,7 @@ The script will also create the files you will need in case things go wrong (UCS
 
 The most common scenario to use the script will be an upgrade.\
 You run the script before the upgrade, upgrade the device, and run the script again.\
-The HTML file will give you the results, and it will indicate if something when down after the upgrade.
+The HTML file will give you the results, and it will indicate if something went down after the upgrade.
 
 
 You can also use the script when copying the configuration from one device to another (configuration migration).\
