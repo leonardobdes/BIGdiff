@@ -92,11 +92,11 @@ Provides information about which versions were tested with the script.
 ## Silent Mode
 
 
-Silent mode is for advanced users, or for automation.
-The script will not show error messages, you will need to get the error code via the Bash exit status variable $?.
+Silent mode is for advanced users, or for automation.\
+The script will not show error messages, you will need to get the error code via the Bash exit status variable $?.\
 It will output the name of the files created, to help with the automation.
 
-To run the script in silent mode just run the script with an option.
+To run the script in silent mode just run the script with an option.\
 Example, help option:
 
 ```
@@ -108,7 +108,7 @@ If you run the above command, you will be presented with the following text:
 ![](/images/silent_mode.png)
 
 
-Majority of the options exist in menu mode, and the functionality will be the same.
+Majority of the options exist in menu mode, and the functionality will be the same.\
 I will explain only the ones that are specific to silent mode.
 
 
@@ -121,15 +121,16 @@ The script will load the files from the local folder, files with name “-before
 ## HTML File
 
 
-The script will compare each object and produce an HTML file with the results.
+The script will compare each object and produce an HTML file with the results.\
 It will always produce information about LTM module, but it will only show GTM module information if either GTM and/or LC are provisioned.
 
 
-The information is provided using HTML tables.
-The script uses DataTables (https://datatables.net/) to create dynamic tables.
-DataTables uses jQuery (https://jquery.com/) internally.
-When opening the HTML file, the browser will download the required files from DataTables and  jQuery CDN networks automatically.
+The information is provided using HTML tables.\
+The script uses DataTables (https://datatables.net/) to create dynamic tables.\
+DataTables uses jQuery (https://jquery.com/) internally.\
+When opening the HTML file, the browser will download the required files from DataTables and  jQuery CDN networks automatically.\
 If the downloads fail, you don’t have Internet access as an example, the browser will show static HTML tables instead.
+
 
 The first part of the file will indicate if any change on the status of the objects, or the number of objects, occurred.
 Also, the number of changes found.
