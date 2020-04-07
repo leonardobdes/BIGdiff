@@ -28,10 +28,8 @@ The HTML file will give you the results, and it will indicate if something chang
 
 
 1. Download the file bigdiff.sh
-2. Create a folder on the device
-
-
-**Important Note: Create inside of the folder /shared/tmp/ as the /shared/ is shared between volumes.**
+2. Create a folder on the device\
+**Important Note: Create inside of the folder /shared/tmp/ as the /shared/ is shared between volumes.**\
     ```
     mkdir /shared/tmp/bigdiff/
     ```
