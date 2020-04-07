@@ -63,29 +63,29 @@ Menu mode will present the following menu:
 ![](/images/menu_mode.png)
 
 Options:
-1. Run before change
+1. Run before change\
 This option will create the backup files (UCS/QKView/Logs) and will generate a text file with the status of the objects.
-2. Run after change
+2. Run after change\
 This option will create the backup files (UCS/QKView/Logs) and will generate a text file with the status of the objects.
 It will also compare this text file with the file created before, and generate an HTML file with the results.
-3. Run before change without backup.
+3. Run before change without backup\
 This option will generate a text file with the status of the objects.
 As the name indicates, it will not generate backup files (UCS/QKView/Logs).
-4. Run after change without backup.
+4. Run after change without backup\
 This option will generate a text file with the status of the objects.
 It will also compare this text file with the file created before, and generate an HTML file with the results.
 As the name indicates, it will not generate backup files (UCS/QKView/Logs).
-5. Generate backup files
+5. Generate backup files\
 This option will create backup files (UCS/QKView/Logs).
-6. Generate UCS file
+6. Generate UCS file\
 This option will create a UCS file that can be used to restore the device in case things go wrong.
-7. Generate QKView file
+7. Generate QKView file\
 This option will create a QKView file that can be used for troubleshooting or to work with F5 support.
-8. Generate full logs file
+8. Generate full logs file\
 This option will create a file with all logs files from the folder /var/log/ that can be used for troubleshooting or to work with F5 support.
-9. Script information
+9. Script information\
 Provides information about the author, version, and the date the script was written.
-10. Version support
+10. Version support\
 Provides information about which versions were tested with the script.
 
 
