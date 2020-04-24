@@ -263,6 +263,12 @@ The files created by the script may have the name localhost.localdomain instead 
 To report new bugs, or request for enhancement (RFE), please use the issues section on GitHub.
 
 
+## More Information
+
+
+https://devcentral.f5.com/s/articles/BIGdiff-Version-2
+
+
 ## Author
 
 
