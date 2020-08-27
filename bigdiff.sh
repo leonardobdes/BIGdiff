@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Author: Leonardo Souza
-# Version: 2.0.1
-# Date: 07/04/2020
+# Version: 2.1.0
+# Date: 27/08/2020
 
 # Version History
 # 1.0.0 - First Version
@@ -16,6 +16,7 @@
   # Added GTM Distributed Application
   # Added support for objects that has space in the name
 # 2.0.1 - Changed Distributed Applications to Distributed Application to match singular used in other objects
+# 2.1.0 - Added v16 to the version supported list
 
 ## Error Codes ##
 # Script exit error codes
@@ -39,7 +40,7 @@ e_multiple_options=12
 silent=0 # Indicates if script is running in silent mode
 product="" # BIG-IP/BIG-IQ/etc..
 supported_product=( BIG-IP ) # Produc supported by the script
-supported_version=( 11 12 13 14 15 ) # List of versions the script supports
+supported_version=( 11 12 13 14 15 16 ) # List of versions the script supports
 software_version="" # Software version used in the device
 software_version_major="" # Major software version used in the device
 bash_version="" # Bash version used in this device
