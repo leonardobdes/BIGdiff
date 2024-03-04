@@ -1,3 +1,6 @@
+#  Support
+I am no longer supporting this project with new functionalities or bug fixes.
+
 #  BIGdiff
 ## About
 This is a bash script to help when doing changes to F5 devices.\
